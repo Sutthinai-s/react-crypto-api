@@ -1,0 +1,140 @@
+.coin-container {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+  
+  .coin-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 900px;
+
+    /* border: 1px solid salmon; */
+  }
+  
+  .coin {
+    display: flex;
+    align-items: center;
+    /* padding-right: 24px; */
+    
+    min-width: 300px;
+    /* border: 1px solid orangered; */
+  }
+  
+  .coin h1 {
+    font-size: 16px;
+    width: 150px;
+    
+    /* border: 1px solid seagreen; */
+  }
+  
+  .coin img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .coin-symbol {
+    text-transform: uppercase;
+    right: 0;
+    /* border: 1px solid firebrick; */
+  }
+  
+  .coin-data {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+
+    /* border: 3px solid tomato; */
+  }
+  
+  .coin-price {
+    width: 110px;
+    text-align: left;
+    
+    /* border: 1px solid seagreen; */
+  }
+  
+  .coin-volume {
+    width: 155px;
+  }
+  
+  .coin-marketcap {
+    width: 230px;
+  }
+  
+  .coin-percent {
+    width: 100px;
+
+    /* border: 1px solid yellowgreen; */
+  }
+  
+  .red {
+    color: #f00606;
+  }
+  
+  .green {
+    color: #11d811;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .coin-row {
+      width: 90vw;
+    }
+
+    .coin {
+      min-width: 200px;
+    }
+
+    .coin h1 {
+      font-size: 14px;
+      width: 100px;
+      
+      /* border: 1px solid seagreen; */
+    }
+    
+    .coin-symbol {
+      font-size: 14px;
+      /* margin-left: 20px; */
+      /* border: 1px solid firebrick; */
+    }
+
+    .coin-data {
+      display: flex;
+      text-align: left;
+      justify-content:space-around;
+      width: 100%;
+  
+      /* border: 1px solid tomato; */
+    }
+
+    .coin-price {
+      /* width: 90px; */
+      font-size: 14px;
+      text-align: center;
+  
+      /* border: 1px solid seagreen; */
+    }
+
+    .coin-marketcap {
+      display: none;
+      
+    }
+
+    .coin-volume {
+      display: none;
+    }
+
+    .coin-percent {
+      font-size: 14px;
+      width: 50px;
+      /* justify-content: left; */
+
+      /* border: 1px solid fuchsia; */
+    }
+  }
